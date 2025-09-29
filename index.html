@@ -24,7 +24,6 @@
       100% { background-position: 0% 50%; }
     }
 
-    /* HEADER GRADIENT ANIMASI */
     header {
       background: linear-gradient(270deg, #f9a8d4, #fbcfe8, #f472b6, #fce7f3);
       background-size: 600% 600%;
@@ -36,7 +35,6 @@
       100% {background-position: 0% 50%;}
     }
 
-    /* Shooting stars */
     .star {
       position: absolute;
       width: 2px;
@@ -50,7 +48,6 @@
       to   { transform: translateX(600px) translateY(300px) rotate(-45deg); opacity: 0; }
     }
 
-    /* Snowflakes */
     .snowflake {
       position: fixed;
       top: -10px;
@@ -65,7 +62,6 @@
       100% { transform: translateY(100vh) rotate(360deg); }
     }
 
-    /* Glassmorphism untuk box */
     .glass-box {
       background: rgba(255, 255, 255, 0.6);
       backdrop-filter: blur(12px);
@@ -74,14 +70,12 @@
       padding: 1.5rem;
     }
 
-    /* Hover ikon */
     .icon-hover:hover {
       transform: scale(1.2) rotate(15deg);
       color: #db2777;
       transition: 0.3s ease;
     }
 
-    /* Foto galeri hover animasi */
     .gallery img {
       transition: transform 0.6s ease, box-shadow 0.3s ease;
       cursor: pointer;
@@ -91,7 +85,6 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
 
-    /* Modal zoom */
     .modal {
       display: none;
       position: fixed;
@@ -116,7 +109,6 @@
       to { transform: scale(1); opacity: 1; }
     }
 
-    /* Extra Animasi CSS */
     @keyframes fadeInUp {
       0% {opacity: 0; transform: translateY(30px);}
       100% {opacity: 1; transform: translateY(0);}
@@ -129,7 +121,7 @@
 
   <!-- Musik -->
   <audio id="bg-music" autoplay loop>
-    <source src="D:\INDEXHTML\music.mp3" type="audio/mpeg">
+    <source src="assets/music.mp3" type="audio/mpeg">
   </audio>
 
   <!-- Efek Bintang -->
@@ -153,14 +145,11 @@
 </header>
 
 <style>
-  /* Blur background untuk header */
   .header-blur {
-    background: rgba(255, 255, 255, 0.3); /* semi transparan */
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(12px);
     border-bottom: 2px solid rgba(236, 72, 153, 0.2);
   }
-
-  /* Animasi teks utama */
   .live-title {
     font-size: 2.5rem;
     font-weight: 800;
@@ -172,20 +161,16 @@
     animation: titleGradient 8s ease infinite, floatText 3s ease-in-out infinite;
     text-shadow: 0 0 15px rgba(236, 72, 153, 0.7), 0 0 30px rgba(236, 72, 153, 0.5);
   }
-
   @keyframes titleGradient {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
-
   @keyframes floatText {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-8px); }
   }
 </style>
-
-
 
   <!-- Tentang Dia -->
   <section class="max-w-4xl mx-auto py-12 px-4" data-aos="fade-right">
@@ -193,9 +178,7 @@
       <i data-lucide="user" class="icon-hover"></i> abt u
     </h2>
     <div class="glass-box">
-      <p class="leading-relaxed">
-        pundungan
-      </p>
+      <p class="leading-relaxed">pundungan</p>
     </div>
   </section>
 
@@ -205,12 +188,12 @@
       <i data-lucide="camera" class="icon-hover"></i> 1% of 100%
     </h2>
     <div class="gallery grid grid-cols-2 md:grid-cols-3 gap-4">
-      <img src="D:\INDEXHTML\foto1.jpg" class="rounded-xl shadow" alt="foto kenangan">
-      <img src="D:\INDEXHTML\foto1.jpg" class="rounded-xl shadow" alt="foto kenangan">
-      <img src="D:\INDEXHTML\foto1.jpg" class="rounded-xl shadow" alt="foto kenangan">
-      <img src="D:\INDEXHTML\foto1.jpg" class="rounded-xl shadow" alt="foto kenangan">
-      <img src="D:\INDEXHTML\foto1.jpg" class="rounded-xl shadow" alt="foto kenangan">
-      <img src="D:\INDEXHTML\foto1.jpg" class="rounded-xl shadow" alt="foto kenangan">
+      <img src="assets/foto1.jpg" class="rounded-xl shadow" alt="foto kenangan">
+      <img src="assets/foto2.jpg" class="rounded-xl shadow" alt="foto kenangan">
+      <img src="assets/foto1.jpg" class="rounded-xl shadow" alt="foto kenangan">
+      <img src="assets/foto2.jpg" class="rounded-xl shadow" alt="foto kenangan">
+      <img src="assets/foto1.jpg" class="rounded-xl shadow" alt="foto kenangan">
+      <img src="assets/foto2.jpg" class="rounded-xl shadow" alt="foto kenangan">
     </div>
   </section>
 
@@ -224,35 +207,24 @@
   <h2 class="text-2xl font-bold text-pink-700 mb-6 flex items-center justify-center gap-2">
     <i data-lucide="play-circle"></i> Video
   </h2>
-
   <div class="relative max-w-6xl mx-auto overflow-hidden">
-    <!-- Carousel Wrapper -->
     <div id="videoCarousel" class="flex transition-transform duration-500 ease-in-out">
-      
-      <!-- Video 1 -->
       <div class="video-item flex-shrink-0 w-1/3 p-4">
         <video controls class="w-full h-64 rounded-xl">
-          <source src="D:\INDEXHTML\vid1.mp4" type="video/mp4">
+          <source src="assets/vid1.mp4" type="video/mp4">
         </video>
       </div>
-
-      <!-- Video 2 -->
       <div class="video-item flex-shrink-0 w-1/3 p-4">
         <video controls class="w-full h-64 rounded-xl">
-          <source src="D:\INDEXHTML\vid1.mp4" type="video/mp4">
+          <source src="assets/vid1.mp4" type="video/mp4">
         </video>
       </div>
-
-      <!-- Video 3 -->
       <div class="video-item flex-shrink-0 w-1/3 p-4">
         <video controls class="w-full h-64 rounded-xl">
-          <source src="D:\INDEXHTML\vid1.mp4" type="video/mp4">
+          <source src="assets/vid1.mp4" type="video/mp4">
         </video>
       </div>
-
     </div>
-
-    <!-- Tombol Navigasi -->
     <button onclick="moveSlide(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-pink-600 text-white p-3 rounded-full shadow-lg hover:bg-pink-700">
       <i data-lucide="chevron-left"></i>
     </button>
@@ -268,22 +240,21 @@
     filter: blur(4px);
     transform: scale(0.9);
     opacity: 0.6;
-    pointer-events: none; /* tidak bisa play */
+    pointer-events: none;
   }
   .video-item.active {
     filter: blur(0);
     transform: scale(1);
     opacity: 1;
     z-index: 10;
-    pointer-events: auto; /* bisa play */
+    pointer-events: auto;
   }
 </style>
 
 <script>
   const carousel = document.getElementById("videoCarousel");
   const items = document.querySelectorAll(".video-item");
-  let currentIndex = 1; // tengah aktif
-
+  let currentIndex = 1;
   function updateCarousel() {
     items.forEach((item, index) => {
       item.classList.remove("active");
@@ -291,24 +262,17 @@
         item.classList.add("active");
       }
     });
-
-    // Geser biar selalu tampil 3 video
     const offset = -(currentIndex - 1) * items[0].offsetWidth;
     carousel.style.transform = `translateX(${offset}px)`;
   }
-
   function moveSlide(direction) {
     currentIndex += direction;
     if (currentIndex < 0) currentIndex = items.length - 1;
     if (currentIndex >= items.length) currentIndex = 0;
     updateCarousel();
   }
-
-  // Set awal
   updateCarousel();
 </script>
-
-
 
   <!-- Ucapan -->
   <section class="bg-pink-100/80 py-12 px-4" data-aos="zoom-in">
@@ -351,12 +315,9 @@
   const pesanInput = document.getElementById("pesanInput");
   const ucapanGrid = document.querySelector(".bg-pink-100\\/80 .grid");
 
-  // 🔹 Fungsi render pesan dari localStorage
   function renderPesan() {
-    ucapanGrid.innerHTML = ""; // clear biar ga dobel
-
+    ucapanGrid.innerHTML = "";
     const pesanList = JSON.parse(localStorage.getItem("pesanList")) || [];
-
     pesanList.forEach(item => {
       const newMessage = document.createElement("div");
       newMessage.className =
@@ -368,46 +329,27 @@
       ucapanGrid.appendChild(newMessage);
     });
   }
-
-  // 🔹 Load pesan saat halaman dibuka
   renderPesan();
 
-  // 🔹 Event submit
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-
     const nama = namaInput.value.trim() || "Anonim";
     const pesan = pesanInput.value.trim();
     if (pesan === "") return;
-
-    // Ambil data lama dari localStorage
     const pesanList = JSON.parse(localStorage.getItem("pesanList")) || [];
-
-    // Tambah pesan baru
     pesanList.push({ nama, pesan });
-
-    // Simpan lagi ke localStorage
     localStorage.setItem("pesanList", JSON.stringify(pesanList));
-
-    // Render ulang
     renderPesan();
-
-    // Reset form
     namaInput.value = "";
     pesanInput.value = "";
   });
 </script>
-
-</script>
-
 
   <!-- Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 1000, once: true });
     lucide.createIcons();
-
-    // Shooting stars
     function createStar() {
       const star = document.createElement("div");
       star.className = "star";
@@ -418,8 +360,6 @@
       setTimeout(() => star.remove(), 3000);
     }
     setInterval(createStar, 700);
-
-    // Salju
     function createSnowflake() {
       const snowflake = document.createElement("div");
       snowflake.className = "snowflake";
@@ -431,8 +371,6 @@
       setTimeout(() => snowflake.remove(), 10000);
     }
     setInterval(createSnowflake, 300);
-
-    // Zoom foto modal
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImage");
     document.querySelectorAll(".gallery img").forEach(img => {
@@ -442,22 +380,19 @@
       });
     });
     modal.addEventListener("click", () => modal.style.display = "none");
-
-    // Music toggle
     const music = document.getElementById("bg-music");
     const musicBtn = document.getElementById("music-btn");
-    let isPlaying = true;
     musicBtn.addEventListener("click", () => {
-      if (isPlaying) {
-        music.pause();
-        musicBtn.innerHTML = '<i data-lucide="pause-circle" class="w-7 h-7"></i>';
-      } else {
+      if (music.paused) {
         music.play();
         musicBtn.innerHTML = '<i data-lucide="music" class="w-7 h-7"></i>';
+      } else {
+        music.pause();
+        musicBtn.innerHTML = '<i data-lucide="music-off" class="w-7 h-7"></i>';
       }
       lucide.createIcons();
-      isPlaying = !isPlaying;
     });
   </script>
+
 </body>
 </html>
